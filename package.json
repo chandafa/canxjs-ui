@@ -1,0 +1,33 @@
+{
+  "name": "canx-ui",
+  "version": "1.0.2",
+  "description": "Headless UI components for CanxJS Framework",
+  "author": "CanxJS Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandafa/canx.JS.git"
+  },
+  "keywords": ["canxjs", "ui", "headless", "components", "react"],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "canx-ui": "./bin/cli.js"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./dist --target node --external react --external react-dom && bunx tsc --emitDeclarationOnly --outDir dist",
+    "prepublishOnly": "bun run build"
+  },
+  "peerDependencies": {
+    "canxjs": "workspace:*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.0"
+  }
+}
