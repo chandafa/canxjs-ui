@@ -1,8 +1,9 @@
-export { Button } from "./components/Button";
-export type { ButtonProps } from "./components/Button";
+export * from "./components/Button";
+export * from "./components/Input";
+export * from "./components/Badge";
+export * from "./components/Label";
+export * from "./components/Card";
+export * from "./components/Alert";
+export * from "./components/Table";
+export * from "./lib/utils";
 
-export { Input } from "./components/Input";
-export type { InputProps } from "./components/Input";
-
-export { Modal } from "./components/Modal";
-export type { ModalProps } from "./components/Modal";
