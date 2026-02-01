@@ -1,8 +1,13 @@
 import { cn } from "../lib/utils";
 
-interface ShimmerButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ShimmerButtonProps {
     href?: string;
     variant?: "primary" | "outline";
+    children?: any;
+    className?: string;
+    type?: "button" | "submit" | "reset";
+    disabled?: boolean;
+    [key: string]: any;
 }
 
 export function ShimmerButton({ 

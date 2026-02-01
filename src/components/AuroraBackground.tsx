@@ -1,7 +1,9 @@
 import { cn } from "../lib/utils";
 
-interface AuroraBackgroundProps extends React.HTMLAttributes<HTMLDivElement> {
-    children?: React.ReactNode;
+interface AuroraBackgroundProps {
+    children?: any;
+    className?: string;
+    [key: string]: any;
 }
 
 export function AuroraBackground({ children, className, ...props }: AuroraBackgroundProps) {

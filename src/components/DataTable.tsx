@@ -15,7 +15,7 @@ interface DataTableProps<T> {
   description?: string;
   primaryAction?: {
     label: string,
-    onClick?: () => void,
+    script?: string, // Action to execute (JS string)
     href?: string
   }
 }
@@ -36,7 +36,7 @@ export function DataTable<T>({ data, columns, actions, title, description, prima
                 {primaryAction.label}
              </a> 
              :
-             <button onClick={primaryAction.onClick} className="btn-premium flex items-center gap-2">
+             <button onclick={primaryAction.script} className="btn-premium flex items-center gap-2">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4"></path></svg>
                 {primaryAction.label}
              </button>

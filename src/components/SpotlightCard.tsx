@@ -1,9 +1,9 @@
-import React from "react";
 import { cn } from "../lib/utils";
 
-interface SpotlightCardProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
+interface SpotlightCardProps {
+    children: any;
     className?: string;
+    [key: string]: any;
 }
 
 export function SpotlightCard({ children, className, ...props }: SpotlightCardProps) {

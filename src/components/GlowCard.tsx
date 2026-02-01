@@ -1,10 +1,10 @@
-import React from "react";
 import { cn } from "../lib/utils";
 
-interface GlowCardProps extends React.HTMLAttributes<HTMLDivElement> {
-    children: React.ReactNode;
+interface GlowCardProps {
+    children: any;
     className?: string;
     hoverEffect?: "lift" | "glow" | "both";
+    [key: string]: any;
 }
 
 export function GlowCard({ 
