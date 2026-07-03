@@ -9,6 +9,7 @@ export * from "./components/GridPattern";
 export * from "./components/InputLabel";
 export * from "./components/PrimaryButton";
 export * from "./components/ShimmerButton";
+export * from "./components/SolarIcon";
 export * from "./components/SpotlightCard";
 export * from "./components/TextInput";
 export * from "./lib/utils";
